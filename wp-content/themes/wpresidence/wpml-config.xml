@@ -1,0 +1,62 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1">estate_agent</custom-type>
+    <custom-type translate="0">wpestate_invoice</custom-type>
+    <custom-type translate="0">membership_package</custom-type>
+    <custom-type translate="1">estate_property</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">property_category</taxonomy>
+    <taxonomy translate="1">property_action_category</taxonomy>
+    <taxonomy translate="1">property_city</taxonomy>
+    <taxonomy translate="1">property_area</taxonomy>
+  </taxonomies>
+  <custom-fields>
+    <custom-field action="copy">agent_email</custom-field>
+    <custom-field action="copy">agent_facebook</custom-field>
+    <custom-field action="copy">agent_linkedin</custom-field>
+    <custom-field action="copy">agent_mobile</custom-field>
+    <custom-field action="copy">agent_phone</custom-field>
+    <custom-field action="copy">agent_pinterest</custom-field>
+    <custom-field action="copy">agent_skype</custom-field>
+    <custom-field action="copy">agent_twitter</custom-field>
+    <custom-field action="copy">property-basement</custom-field>
+    <custom-field action="copy">property-date</custom-field>
+    <custom-field action="copy">property-external-construction</custom-field>
+    <custom-field action="copy">property-garage</custom-field>
+    <custom-field action="copy">property-garage-size</custom-field>
+    <custom-field action="copy">property-roofing</custom-field>
+    <custom-field action="copy">property-year</custom-field>
+    <custom-field action="copy">property_address</custom-field>
+    <custom-field action="translate">property_agent</custom-field>
+    <custom-field action="copy">property_area</custom-field>
+    <custom-field action="copy">property_basement</custom-field>
+    <custom-field action="copy">property_bathrooms</custom-field>
+    <custom-field action="copy">property_bedrooms</custom-field>
+    <custom-field action="copy">property_city</custom-field>
+    <custom-field action="copy">property_country</custom-field>
+    <custom-field action="copy">property_county</custom-field>
+    <custom-field action="copy">property_date</custom-field>
+    <custom-field action="copy">property_external_construction</custom-field>
+    <custom-field action="copy">property_garage</custom-field>
+    <custom-field action="copy">property_garage_size</custom-field>
+    <custom-field action="copy">property_google_view</custom-field>
+    <custom-field action="translate">property_label</custom-field>
+    <custom-field action="translate">property_label_before</custom-field>
+    <custom-field action="copy">property_latitude</custom-field>
+    <custom-field action="copy">property_longitude</custom-field>
+    <custom-field action="copy">property_lot_size</custom-field>
+    <custom-field action="copy">property_price</custom-field>
+    <custom-field action="copy">property_roofing</custom-field>
+    <custom-field action="copy">property_rooms</custom-field>
+    <custom-field action="copy">property_size</custom-field>
+    <custom-field action="copy">property_state</custom-field>
+    <custom-field action="copy">property_status</custom-field>
+    <custom-field action="copy">property_year</custom-field>
+    <custom-field action="copy">property_zip</custom-field>
+  </custom-fields>
+  <admin-texts>
+    <key name="wp_estate_property_features_text"/>
+  </admin-texts>
+</wpml-config>
+

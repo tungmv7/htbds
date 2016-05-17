@@ -1,0 +1,1797 @@
+/*=Theme Options */
+   
+.add_curency{
+    display: inline-block;
+}
+.cur_explanations {
+    margin: 10px 0px 5px 0px;
+}
+
+#plan_image{
+    max-width: 250px;   
+}
+
+#plan_image_button,
+#category_featured_image_button,
+#page_custom_image_button{
+    min-width: 150px!important;
+    background-color: #095353!important;
+    color: #fff!important;
+    padding-top: 3px!important;
+    height: auto!important;
+    padding-bottom: 3px!important;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    box-shadow: none !important;
+}
+
+.new_admin_submit{
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+    border: 0;
+    padding: 11px 25px!important;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #095353;
+    min-width: auto!important;
+        padding-top: 9px!important;
+}
+
+.new_admin_submit_right{
+    float: right;
+    margin: 15px 15px 0px 0px;
+}
+
+.theme_options_hide{
+    display:none;
+}
+
+#wpestate_wrapper_admin_menu h1{
+    margin-top: 0px;
+    padding: 20px 23px;
+    display: inline-block;
+}
+
+
+.theme_option_separator{
+    border-bottom: 0px solid #ccc;
+}
+
+
+.estate_option_row{
+   border-bottom: 1px solid #FFE7E7;
+   padding: 20px 20px 20px 230px;
+}
+
+.header_explanation {
+    font-size: 12px;
+    display: block;
+    padding: 0px 0px 0px 230px;
+}
+
+.estate_option_row_submit{
+    padding: 20px 20px 20px 230px;
+}
+
+.label_option_row{
+    font-weight: bold;
+    font-size:15px;
+    color: #002B2B;
+}
+
+.option_row_explain{
+    color: #99999b;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+#wpestate_wrapper_admin_menu select {
+    box-shadow: none !important;
+    border-radius: 6px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    border-color: #d9d9d9;
+    vertical-align: middle;
+    height: 40px;
+    padding: 7px 9px;
+    min-width: 300px;
+}
+
+#custom_fields_search select,
+#custom_fields_wrapper select,
+#custom_fields  select {
+    width:140px!important;
+    min-width:140px!important;
+}
+
+
+
+.upload_button {
+    min-width: 150px!important;
+    background-color: #095353!important;
+    color: #fff!important;
+    padding-top: 6px!important;
+}
+
+#wpestate_search_bar,
+#wpestate_wrapper_admin_menu input{
+    box-shadow: none !important;
+    border-radius: 6px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    border-color: #d9d9d9;
+    vertical-align: middle;
+    height: 40px;
+    padding: 7px 9px;
+    min-width: 300px;    
+    -webkit-appearance: none;
+    border: 1px solid #d9d9d9 ;
+}
+
+
+#free_mem_list_unl{    
+    width: 18px;
+    height: 18px!important;
+    min-width: 18px!important;
+    border-radius:1px!important;
+}
+
+#email_management_tab input{
+    margin-bottom: 20px;
+}
+
+
+#wpestate_wrapper_admin_menu textarea{
+    border: 1px solid #d9d9d9;
+    box-shadow: none !important;
+    border-radius: 6px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    
+}
+
+
+
+#global_settings_tab input:focus{
+    border-radius: 0px;
+}
+
+.theme_options_sidebar ul{
+    float:left;
+    width:100%;
+}
+
+.theme_options_sidebar ul li{
+    float: left;
+    padding: 9px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 3px 10px;
+    width: 160px;
+}
+
+.theme_options_sidebar ul li.selected_option{
+    background-color: #CDCDCD;
+    color: #002B2B;
+    border-radius: 3px;
+}
+.theme_options_sidebar ul li:hover{
+    background-color: #DFDFDF;
+}
+
+
+.wrap-topbar{
+    position:relative;
+    width: 100%;
+    height: 100px;
+    background-color: #002B2B;
+    background-image: url('css-images/header-admin.jpg');
+    background-position: 100% 0px;
+    background-repeat: no-repeat;
+}
+.theme_details{
+    position: absolute;
+    top: 78px;
+    right: 20px;
+}
+
+#title_demo_import{
+    color: #F8D10A;
+    margin: 25px 20px 20px 20px;
+    float: left;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 9px 15px 4px 0;
+    line-height: 29px;
+}
+
+.upload_details{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+
+.admin_top_bar_button{
+    color: #F9D10A;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+    width: 110px;
+    height: 100px;
+    padding: 24px 6px 10px 6px;
+    box-sizing: border-box;
+}
+
+.tobpbar_selected_option,
+.admin_top_bar_button:hover{
+    background-color: #095353;
+}
+
+.admin_top_bar_button img{
+    display: block;
+    margin: auto;
+}
+
+#wpestate_sidebar_menu{
+    width: 200px;
+    background-color: #ECECEC;
+    border: 1px solid #E4E4E4;
+    float:left;
+    min-height: 800px;
+}
+
+#wpestate_wrapper_admin_menu{
+    width: 100%;
+    /* float: left; */
+    min-height: 800px;
+    background: #fff;
+}
+
+
+
+
+#estate_admin_form{
+    width: 100%;
+    float: left;
+}
+
+#aaiu-uploader-demo{
+    float:left;
+    clear:both;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: normal!important;
+    background-color: #002B2B !important;
+    color: #fff;
+    padding: 9px 26px!important;
+    -webkit-appearance: button;
+    cursor: pointer;
+    color: #fff;
+    margin: 20px 10px 10px 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-shadow: none;
+}
+
+#upload-container{
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.file_progress{
+    float:left;
+    width:100%;
+}
+
+.uploaded_images_demo{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.activate_wrapper{
+    
+}
+
+.activate_template{
+position: absolute;
+    bottom: -50px;
+    right: -5px;
+    /* width: 100px; */
+    /* height: 50px; */
+    background-color: #3C90BE;
+    /* border-bottom: 3px solid #347DA4; */
+    cursor: pointer;
+    /* float: left; */
+    /* clear: both; */
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: normal!important;
+    background-color: #002B2B !important;
+    color: #fff;
+    padding: 9px 26px!important;
+    -webkit-appearance: button;
+    cursor: pointer;
+    color: #fff;
+    margin: 20px 10px 10px 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-shadow: none;
+}
+
+
+.template-item{
+    float:left;
+    position:relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.template-wrapper{
+    position:relative;
+    float:left;
+    margin-bottom: 30px;
+}
+
+.template_details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+#upload-container .imagelist{
+    width:100%;
+    float:left;
+}
+
+.importing_mess{
+    position: absolute;
+    bottom: -37px;
+    left: 2px;
+    padding: 10px 0px;
+    color: #002B2B;
+    width: 200px;
+}
+
+
+.wpestate_adv_search_label{
+    font-size: 14px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#wpestate_search_bar{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+
+#wpestate_search_bar{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.wpestate_admin_search_bar{
+    background: #ECECEC;
+    border: 1px solid #E4E4E4;
+    padding: 10px;
+}
+
+
+#activate_pack_listing,
+#activate_pack{
+    background-color: #1ABC9C;
+    color:#fff;
+    padding:10px 20px;
+    cursor:pointer;
+    display: inline-block;
+}
+
+
+
+.notice_file{
+    padding:10px;
+    background: red;
+    color:#fff;
+    margin-left:20px;
+}
+
+.pblank{
+    margin-bottom: 40px;
+}
+
+#theme_slider{
+    height: 400px!important;
+    margin-left: 0px;
+}
+
+.wpestate-tab-wrapper-container p{
+    margin-left: 20px;
+}
+
+.admin-exp{
+    margin-left: 230px;
+    padding-right: 10px;
+}
+
+.desgintable input{
+    float:left;
+}
+
+.wpestate-tab-wrapper-container{
+    float:left;
+      background: #ececec;
+      border: 1px solid #ccc;
+}
+
+
+.wpestate-tab-wrapper{
+    width:200px;
+    height:100%;
+    float:left;
+}
+
+
+
+.ourlogo{
+    width:100%;
+    float:left;
+    height: 95px;
+}
+
+.ourlogo img{
+    margin:28px 0px 0px 20px;
+}
+
+.wpestate-tab-item{
+    width:100%;
+    padding: 0px; 
+    float:left;
+    font-size: 14px;
+    font-family: 'Arial';
+    font-style: normal;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    z-index: 100;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    cursor:pointer;
+}
+
+.wpestate-tab-item:hover{
+    background-color: #f1f1f1;
+}
+
+.wpestate-tab-item:hover a{
+     color:#45b37e;
+}
+
+
+.wpestate-tab-item a{
+    text-decoration: none;
+    color: #1a171b;
+    line-height: 22px;
+    padding: 13px 0px 5px 15px;
+    width: 185px;
+    float: left;
+    min-height: 30px;    
+}
+
+
+.wpestate-tab-active{
+   background-color: #FCFCFC;
+    width: 101%;
+}
+
+.wpestate-tab-active a{
+      color:#45b37e;
+}
+
+.wpestate-tab-container{
+    height:100%;
+    min-height: 1200px;
+    width:690px;
+    float:left;
+    border-left:1px solid #ccc;
+    background-color: #FCFCFC;
+    z-index: 10;
+    position: relative;
+    padding-right: 20px
+}
+
+
+.wpestate-tabh1{
+    color: #1a171b;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 37px 20px 20px 20px!important;
+}
+
+.wpestate-tab-container .form-table{
+    margin-left: 20px;
+    color: #1a171b!important;
+}
+
+.help_link{
+    position:absolute;
+    top:15px;
+    right:15px;
+    text-decoration: none;
+    background-color: #22be73;
+    color: #fff;
+    padding: 2px 10px;
+}
+
+.help_link:hover{
+    color:#000;
+}
+/*=Page Options */
+
+.metacustom label{
+    width:100%;
+    float: left
+}
+
+.metacustom{
+    float:left;
+    width:33%;
+    margin-bottom: 22px;
+}
+
+.field_item{
+    float:left;
+    width:145px;
+    margin-right:20px;
+}
+.newfield{
+    width:200px;
+}
+
+
+.field_row{
+    margin-bottom: 0px;
+    float: left;
+    width: 100%;
+    padding: 15px 15px
+}
+
+.field_row:nth-child(odd){
+    background-color: #f6f6f6;
+}
+
+.deletefieldlink{
+    margin-top: 25px;
+    float: left;
+    margin-right: 10px;
+}
+
+#custom_fields_search,
+#custom_fields_wrapper,
+#custom_fields{
+    margin: 10px 10px 30px 0px;
+    display: inline-block;
+}
+
+#add_field{
+    margin: 10px 0px 0px 0px;
+    background-color: #4ecb8f;
+    color: #fff;
+    padding: 11px;
+    text-decoration: none;
+    float: left;
+    border-radius: 3px;
+}
+
+#add_curency{
+    margin: 10px 0px 10px 0px;
+    background-color: #4ecb8f;
+    color: #fff;
+    padding: 11px;
+    text-decoration: none;
+    display: inline;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+
+.memebership_row{
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.memebership_item{
+   width:200px;
+   margin: 10px 0px 0px 0px;
+   float:left;
+}
+
+.memebership_item label{
+    width:100%;
+}
+
+#new_membership{
+    width: 86px;
+    height: 20px;
+    float: left;
+    padding: 6px 10px 0px 10px;
+    background-color: #ccc;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.submit_membership{
+    clear: both;
+    float: left;
+}
+
+#sample_member_row{
+   display:none; 
+}
+
+.memebership_alert{
+    padding: 8px;
+    background-color: #fffbcc;
+    margin: 4px;
+    width: 375px;
+}
+
+.remove_pack{
+    margin-top: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.memeber_title{
+    margin: 30px 0px 0px 0px;
+    float:left;
+}
+
+.pblankh{
+    padding-left:0px!important;
+}
+
+
+/* =MailChimp
+----------------------------------------------- */
+
+#mc_embed_signup,
+.indicates-required,
+.mc-field-group,
+.mce-responses,
+.response,
+#mce-responses .clear{
+    display:block!important;
+}
+/* Patterns admin
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.colorpicker {
+    width: 356px;
+    height: 176px;
+    overflow: hidden; 
+    position: absolute;
+    background: url(css-images/colorpicker_background.png);
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    
+}
+
+.colorpicker_color {
+    width: 150px;
+    height: 150px;
+    left: 14px;
+    top: 13px;
+    position: absolute;
+    background: #f00;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.colorpicker_color div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: url(css-images/colorpicker_overlay.png);
+}
+
+.colorpicker_color div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    background: url(css-images/colorpicker_select.gif);
+    margin: -5px 0 0 -5px;
+}
+
+.colorpicker_hue {
+
+    position: absolute;
+
+    top: 13px;
+
+    left: 171px;
+
+    width: 35px;
+
+    height: 150px;
+
+    cursor: n-resize;
+
+}
+
+.colorpicker_hue div {
+
+    position: absolute;
+
+    width: 35px;
+
+    height: 9px;
+
+    overflow: hidden;
+
+    background: url(css-images/colorpicker_indic.gif) left top;
+
+    margin: -4px 0 0 0;
+
+    left: 0px;
+
+}
+
+.colorpicker_new_color {
+
+    position: absolute;
+
+    width: 60px;
+
+    height: 30px;
+
+    left: 213px;
+
+    top: 13px;
+
+    background: #f00;
+
+}
+
+.colorpicker_current_color {
+
+    position: absolute;
+
+    width: 60px;
+
+    height: 30px;
+
+    left: 283px;
+
+    top: 13px;
+
+    background: #f00;
+
+}
+
+.colorpicker input {
+
+    background-color: transparent;
+
+    border: 1px solid transparent;
+
+    position: absolute;
+
+    font-size: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #898989;
+
+    top: 4px;
+
+    right: 11px;
+
+    text-align: right;
+
+    margin: 0;
+
+    padding: 0;
+
+    height: 11px;
+
+}
+
+.colorpicker_hex {
+
+    position: absolute;
+
+    width: 72px;
+
+    height: 22px;
+
+    background: url(css-images/colorpicker_hex.png) top;
+
+    left: 212px;
+
+    top: 142px;
+
+}
+
+.colorpicker_hex input {
+
+    right: 6px;
+
+}
+
+.colorpicker_field {
+
+    height: 22px;
+
+    width: 62px;
+
+    background-position: top;
+
+    position: absolute;
+
+}
+
+.colorpicker_field span {
+
+    position: absolute;
+
+    width: 12px;
+
+    height: 22px;
+
+    overflow: hidden;
+
+    top: 0;
+
+    right: 0;
+
+    cursor: n-resize;
+
+}
+
+.colorpicker_rgb_r {
+
+    background-image: url(css-images/colorpicker_rgb_r.png);
+
+    top: 52px;
+
+    left: 212px;
+
+}
+
+.colorpicker_rgb_g {
+
+    background-image: url(css-images/colorpicker_rgb_g.png);
+
+    top: 82px;
+
+    left: 212px;
+
+}
+
+.colorpicker_rgb_b {
+
+    background-image: url(css-images/colorpicker_rgb_b.png);
+
+    top: 112px;
+
+    left: 212px;
+
+}
+
+.colorpicker_hsb_h {
+
+    background-image: url(css-images/colorpicker_hsb_h.png);
+
+    top: 52px;
+
+    left: 282px;
+
+}
+
+.colorpicker_hsb_s {
+
+    background-image: url(css-images/colorpicker_hsb_s.png);
+
+    top: 82px;
+
+    left: 282px;
+
+}
+
+.colorpicker_hsb_b {
+
+    background-image: url(css-images/colorpicker_hsb_b.png);
+
+    top: 112px;
+
+    left: 282px;
+
+}
+
+.colorpicker_submit {
+
+    position: absolute;
+
+    width: 22px;
+
+    height: 22px;
+
+    background: url(css-images/colorpicker_submit.png) top;
+
+    left: 322px;
+
+    top: 142px;
+
+    overflow: hidden;
+
+}
+
+.colorpicker_focus {
+
+    background-position: center;
+
+}
+
+.colorpicker_hex.colorpicker_focus {
+
+    background-position: bottom;
+
+}
+
+.colorpicker_submit.colorpicker_focus {
+
+    background-position: bottom;
+
+}
+
+.colorpicker_slider {
+
+    background-position: bottom;
+
+}
+
+
+
+
+
+
+
+
+
+.colorpicker {
+    width: 356px;
+    height: 176px;
+    overflow: hidden;
+    position: absolute;
+    background: url(css-images/colorpicker_background.png);
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    z-index:99;
+}
+.colorpicker_color {
+    width: 150px;
+    height: 150px;
+    left: 14px;
+    top: 13px;
+    position: absolute;
+    background: #f00;
+    overflow: hidden;
+    cursor: crosshair;
+}
+.colorpicker_color div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: url(css-images/colorpicker_overlay.png);
+}
+.colorpicker_color div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    background: url(css-images/colorpicker_select.gif);
+    margin: -5px 0 0 -5px;
+}
+.colorpicker_hue {
+    position: absolute;
+    top: 13px;
+    left: 171px;
+    width: 35px;
+    height: 150px;
+    cursor: n-resize;
+}
+.colorpicker_hue div {
+    position: absolute;
+    width: 35px;
+    height: 9px;
+    overflow: hidden;
+    background: url(css-images/colorpicker_indic.gif) left top;
+    margin: -4px 0 0 0;
+    left: 0px;
+}
+.colorpicker_new_color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 213px;
+    top: 13px;
+    background: #f00;
+}
+.colorpicker_current_color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 283px;
+    top: 13px;
+    background: #f00;
+}
+.colorpicker input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #898989;
+    top: 4px;
+    right: 11px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    height: 11px;
+}
+.colorpicker_hex {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    background: url(css-images/colorpicker_hex.png) top;
+    left: 212px;
+    top: 142px;
+}
+.colorpicker_hex input {
+    right: 6px;
+}
+.colorpicker_field {
+    height: 22px;
+    width: 62px;
+    background-position: top;
+    position: absolute;
+}
+.colorpicker_field span {
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    cursor: n-resize;
+}
+.colorpicker_rgb_r {
+    background-image: url(css-images/colorpicker_rgb_r.png);
+    top: 52px;
+    left: 212px;
+}
+.colorpicker_rgb_g {
+    background-image: url(css-images/colorpicker_rgb_g.png);
+    top: 82px;
+    left: 212px;
+}
+.colorpicker_rgb_b {
+    background-image: url(css-images/colorpicker_rgb_b.png);
+    top: 112px;
+    left: 212px;
+}
+.colorpicker_hsb_h {
+    background-image: url(css-images/colorpicker_hsb_h.png);
+    top: 52px;
+    left: 282px;
+}
+.colorpicker_hsb_s {
+    background-image: url(css-images/colorpicker_hsb_s.png);
+    top: 82px;
+    left: 282px;
+}
+.colorpicker_hsb_b {
+    background-image: url(css-images/colorpicker_hsb_b.png);
+    top: 112px;
+    left: 282px;
+}
+.colorpicker_submit {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(css-images/colorpicker_submit.png) top;
+    left: 322px;
+    top: 142px;
+    overflow: hidden;
+}
+.colorpicker_focus {
+    background-position: center;
+}
+.colorpicker_hex.colorpicker_focus {
+    background-position: bottom;
+}
+.colorpicker_submit.colorpicker_focus {
+    background-position: bottom;
+}
+.colorpicker_slider {
+    background-position: bottom;
+}
+
+.colorpickerHolder{
+    height: 35px;
+    right: 0;
+    top: 0;
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+    border:1px solid #FFE7E7;
+    margin-top: 2px;
+}
+
+.colorpickerHolder div{
+    background:transparent url(css-images/select2.png) repeat scroll center center;
+    height:35px;
+    left:1px;
+    top:1px;
+    width:35px;
+}
+#colorpickertable .inptxt{width:70px;}
+#colorpickertable .clp{width:250px;padding-left:15px;}
+
+
+
+
+/*=======================================================================
+
+    Tabs
+    
+ ========================================================================*/
+
+.tabs { 
+    display: block;
+    width:700px;
+    margin-top:30px;
+    border:1px solid #CCC;
+}
+
+.tabs ul {
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    border-bottom: 1px solid #CCC;
+}
+
+.tabs li {
+    display: block;
+    width:200px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    line-height: 30px;
+    float: left;
+    color: #999;
+    cursor: default;
+}
+
+.tabs li a {
+    display: block;
+    width: auto;
+    height: 29px;
+    padding: 0 9px;
+    line-height: 30px;
+    border: 1px solid #CCC;
+    margin: 0 -1px 0 0;
+    color: #05390a;
+    background: #5dbb73;
+    text-decoration: none;
+}
+
+.tabs li a:hover {
+    text-decoration: none;
+}
+
+.tabs li.active a {
+    height: 30px;
+    font-weight: bold;
+    background: #ebffef;
+    border-width: 1px 1px 0 1px;
+}
+
+.tabs div {
+    display: none;
+    padding: 20px 10px;
+}
+
+#googleMap > div{
+    display: block;
+} 
+
+#googleMap > div div{
+    display: block;
+} 
+/*  */
+
+#tabsys input[type="text"],#tabpat input[type="text"]{	
+    float: left;
+    display: inline;
+}
+
+#tabsys .colorpickerHolder,#tabpat .colorpickerHolder{
+    display: inline;
+    float:left;
+    padding:0px;
+
+}
+#tabsys .sqcolor,#tabpat .sqcolor{
+    display: block;
+    padding:0px;
+}
+
+/* 
+.tabs tabadmin {
+               display: none;
+padding: 20px 10px;
+       }
+*/	
+
+.tabs div.active {
+    display: block;
+}
+
+.tabs li:last-child {
+    margin-right: 0;
+}
+
+/**** Pretty Tab Styles ****/
+
+.pretty.tabs ul {
+    display: table;
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #f7f7f7;
+
+
+}
+
+.pretty.tabs li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+}
+
+.pretty.tabs li a {
+    padding: 0;
+    font-size: 14px;
+    height: 52px;
+    line-height: 52px;
+    color: #444;
+    border: none;
+    border-right: 1px solid #CCC;
+    font-weight: bold;
+    background: transparent;
+}
+
+.pretty.tabs li:last-child a {
+    border-right: none;
+}
+
+.pretty.tabs li.active a {
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    border: none;
+    background: #D74142; /* Old browsers */
+
+
+}
+
+.pretty.tabs ul li.active:first-child a {
+
+    margin-left: 0; 
+}
+
+.pretty.tabs ul li.active:last-child a {
+
+}
+
+.ie7 .pretty.tabs > ul { width: 100%; height: 51px; }
+.ie7 .pretty.tabs > ul li { display: block; float: left; margin: 0; }
+.ie7 .pretty.tabs > ul li a { padding: 0 20px; }
+
+
+
+/**** Pill Tabs ****/
+
+.pill.tabs { height: auto; }
+.pill.tabs li, .pill.tabs li, .pretty.pill.tabs li { float: none; height: auto; }
+.pill.tabs li a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 1px 0; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
+.pill.tabs li a.active { height: auto; margin: 0; border-width: 1px 0 0; background: #fff; }
+
+.pretty.pill.tabs { border-bottom: solid 1px #eee; height: auto; }
+.pretty.pill.tabs li a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff; }
+.pretty.pill.tabs li a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
+.pretty.pill.tabs li.active:first-child a { margin: 0; }
+
+
+@media only screen and (max-width: 767px) {
+    .pretty.tabs ul {
+
+        overflow: hidden;
+    }
+
+    .pretty.tabs li a {
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+}
+
+/* Vertically Align Stuff */
+
+.valign { display: table; width: 100%; }
+
+.valign > div, .valign > article { display: table-cell; vertical-align: middle; }
+
+
+/*3.8 update*/
+
+.form-table, .form-table td, .form-table th, .form-table td p, .form-wrap label{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+textarea, input, select {
+    font-size: 13px;
+}
+.meta-box-sortables select {
+  max-width: 250px;
+  width: 100%;
+}
+
+.field_item input{
+    width:125px;
+    min-width:125px!important;
+}
+
+#add_status,
+#add_feature{
+    margin: 10px 0px 0px 0px;
+    background-color: #4ecb8f;
+    color: #fff;
+    padding: 11px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+#add_status{
+    margin-bottom:10px;
+}
+
+#estate_property-googlemap input[type=text],
+#estate_property-custom input[type=text],
+#estate_property-propdetails input[type=text],
+#estate_property-sectionid input[type=text]{
+        width:250px;
+}
+
+#estate_property-googlemap textarea,
+#estate_property-custom textarea,
+#estate_property-propdetails textarea,
+#estate_property-sectionid textarea{
+        width:250px;
+}
+
+
+.advsearchlable{
+    margin-left: 10px;
+}
+
+.pblankh{
+  padding-left: 0px;  
+}
+
+
+
+
+
+.wpb-content-layouts .wpb-layout-element-button .wpestate_vc_logo {
+    background-image: url(css-images/vclogo.png);
+    width: 30px;
+    height: 30px;
+    background-size: contain; 
+}
+.wpb-content-layouts .wpb-layout-element-button .vc-element-icon.wpestate_vc_logo {
+    width: 32px;
+    height: 32px; 
+}
+
+.vc_license-activation-notice{
+    display:none;
+}
+
+
+.floor_p{
+    width:33%;
+    float:left;   
+    height: 50px;
+}
+
+.plan_description{
+    width:345px;
+}
+
+.plan_row{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+    position:relative;
+}
+
+.plan_row i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #a51e6c;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.plan_row textarea,
+.plan_row input{
+    width:90%;
+}
+
+#plan_image_button{
+    width:100px!important;
+}
+
+#add_new_plan {
+    margin: 10px 0px 30px 0px;
+    cursor:pointer;
+   
+    background-color: #4ecb8f;
+    color: #fff;
+    padding: 5px;
+}
+
+
+.email_row{
+    width:100%;
+    float:left;
+    padding-left: 230px;
+    margin-bottom: 20px;
+}
+
+.email_row label{
+    width:100%;
+    float:left;
+} 
+
+.email_row input,
+.email_row textarea{
+    width:75%;
+    float:left;
+    margin-bottom: 10px;
+}
+
+.extra_exp{
+    float:left;
+    width:100%;
+}
+
+.extra_exp_new {
+    width: 100%;
+    display: inline-block;
+}
+
+/*=mega menu admin*/
+.wpestate-megamenu-background-image {
+    max-width: 300px;
+}
+
+
+
+
+
+.remove-megamenu-background,
+.field-megamenu-background, 
+.field-megamenu-checkbox, 
+.field-megamenu-font-icon, 
+.field-megamenu-styles, 
+.field-megamenu-widgets, 
+.wpestate-megamenu-background-image,
+.load_back_menu{
+    display: none;
+}
+
+.menu-item-depth-0.wpestate-megamenu .load_back_menu  {
+    display: inline-block;
+}
+
+.menu-item-depth-0 .field-megamenu-checkbox, 
+.menu-item-depth-0.wpestate-megamenu .field-megamenu-background, 
+.menu-item-depth-0.wpestate-megamenu .field-megamenu-styles,
+.menu-item-depth-0.wpestate-megamenu .wpestate-megamenu-background-image, 
+.menu-item-depth-1.wpestate-megamenu .field-megamenu-widgets, 
+.menu-item-depth-2.wpestate-megamenu .field-megamenu-widgets {
+    display: block;
+    margin: .6em 0!important;
+}
+
+.field-megamenu-checkbox-border{
+    display:none;
+}
+
+.menu-item-depth-1 .field-megamenu-checkbox-border{
+    display:block;
+}
+
+
+
+/*=property page design*/
+#property_page_tools{
+    width:100%;
+    float:left;
+    height:150px;
+    margin-top:40px;
+}
+
+#property_page_design_wrapper{
+    width: 100%;
+    max-width: 800px;
+    border:2px solid #ccc;
+    padding:20px;
+    min-height: 500px;
+    float: left;
+
+}
+
+#property_page_sidebar_left,
+#property_page_sidebar_right{
+    border: 1px solid red;
+    width: 28%;
+    min-height: 500px;
+    float: left;
+    background-color: #eee;
+    margin-left: 1%;
+    float:left;
+}
+
+#property_page_sidebar_left{
+    margin-left: 0%;
+    margin-right: 1%;
+}
+
+#property_page_content{
+    border:1px solid red;
+    width:70%;
+    min-height: 500px;   
+    float:left;
+    position:relative;
+    list-style-type: none; margin: 0; padding: 0; 
+}
+
+
+#property_page_content li{
+    
+}
+
+
+
+
+
+
+.prop_full_width,
+#property_page_content.full_page{
+    width:100%;
+}
+
+.prop_full_width{
+    width: 100%;
+    max-width: 520px;
+    float: left;
+    border-radius: 3px;
+    background-color: #efefef;
+    padding: 10px 10px;
+    text-align: center;
+    position: relative;
+    margin: 30px 10px 10px 10px;
+}
+
+
+
+.prop_page_design_el{
+    float: left;
+    border-radius: 3px;
+    background-color: #efefef;
+    padding: 10px 10px;
+    text-align: center;
+    min-width: 70px;
+    position:relative;
+}
+
+.prop_page_design_el:hover{
+    cursor: move;
+    background-color: #d7d7d7;
+}
+
+.prop_page_design_el_modal{
+    float: left;
+    border-radius: 3px;
+    background-color: #efefef;
+    padding: 10px 10px;
+    text-align: center;
+    min-width: 70px;
+    position:relative;
+    cursor:pointer;
+}
+
+.prop_page_design_el_modal:hover{
+    background-color: #efefef;
+}
+
+
+.delete_design_el{
+    width: 30px;
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    background: red;
+    position: absolute;
+}
+
+.prop-col-control-wrapper{
+    position: absolute;
+    top: -21px;
+    left: 0px;
+}
+
+.prop-col-control{
+    position: relative;
+    float: left;
+    background-color: #EFEFEF;
+    /* width: 20px; */
+    height: 20px;
+    padding: 5px 10px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.prop-columns{
+    background-color: #999;
+    float: left;
+    border: 3px solid #efefef;
+    box-sizing: border-box;   
+    min-height: 35px;
+}
+
+.col-prop-12{
+    width:100%;
+}
+
+.col-prop-9{
+    width:75%;
+}
+
+.col-prop-8{
+    width:66%;
+}
+
+.col-prop-6{
+    width:50%;
+}
+
+.col-prop-3{
+     width:25%;
+}
+
+.col-prop-4{
+   width:33.33%;
+}
+
+.add_prop_design_element{
+    width: 20px;
+    height: 20px;
+    background-color: lightblue;
+    margin: 0px auto;
+    margin-top: 4px;
+    cursor:pointer;
+}
+
+.design_element_col{
+    text-align: center;
+    background: yellow;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+#modal_el_pick{
+    display:none;
+    width:500px;
+    height:500px;
+    background-color: #eee;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left: -250px;
+    margin-top:-250px;
+    -webkit-box-shadow: -7px 7px 40px -4px rgba(189,189,189,1);
+     -moz-box-shadow: -7px 7px 40px -4px rgba(189,189,189,1);
+     box-shadow: -7px 7px 40px -4px rgba(189,189,189,1);
+}
+
+#modal_el_pick_close{
+    position:absolute;
+    background-color: red;
+    top:0px;
+    right:0px;
+    cursor:pointer;
+}
+
+
+#save_prop_design{
+        box-shadow: none !important;
+    border-radius: 6px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    border-color: #d9d9d9;
+    vertical-align: middle;
+    height: 40px;
+    padding: 7px 9px;
+    min-width: 300px;
+    -webkit-appearance: none;
+        font-size: 14px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+    border: 0;
+    padding: 11px 25px!important;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #095353;
+    min-width: auto!important;
+    padding-top: 9px!important;
+}
