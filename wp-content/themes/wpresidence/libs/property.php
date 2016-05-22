@@ -46,7 +46,28 @@ if (!function_exists('wpestate_create_property_type')):
                 'rewrite' => array('slug' => 'listings')
             )
         );
-
+        register_taxonomy('property_city', array('estate_property'), array(
+                'labels' => array(
+                    'name' => __('City', 'wpestate'),
+                    'add_new_item' => __('Add New City', 'wpestate'),
+                    'new_item_name' => __('New City', 'wpestate')
+                ),
+                'hierarchical' => true,
+                'query_var' => true,
+                'rewrite' => array('slug' => 'city', 'with_front' => false)
+            )
+        );
+        register_taxonomy('property_featured_category', array('estate_property'), array(
+                'labels' => array(
+                    'name'              => __('Featured','wpestate'),
+                    'add_new_item'      => __('Add New Featured','wpestate'),
+                    'new_item_name'     => __('New Featured','wpestate')
+                ),
+                'hierarchical'  => true,
+                'query_var'     => true,
+                'rewrite'       => array( 'slug' => 'featured' )
+            )
+        );
 
         /*
 // add custom taxonomy
@@ -65,17 +86,6 @@ register_taxonomy('property_action_category', array('estate_property'), array(
 
 
 // add custom taxonomy
-        register_taxonomy('property_city', array('estate_property'), array(
-                'labels' => array(
-                    'name' => __('City', 'wpestate'),
-                    'add_new_item' => __('Add New City', 'wpestate'),
-                    'new_item_name' => __('New City', 'wpestate')
-                ),
-                'hierarchical' => true,
-                'query_var' => true,
-                'rewrite' => array('slug' => 'city', 'with_front' => false)
-            )
-        );
 
 
         /*
