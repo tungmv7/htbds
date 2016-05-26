@@ -2,35 +2,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpresidence\n"
 "POT-Creation-Date: 2016-04-13 12:27+0200\n"
-"PO-Revision-Date: 2016-04-13 12:27+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2016-05-26 20:28+0700\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: E:\\!our theme wordpress\\residence\\!versions"
-"\\1.15.2\\wpresidence\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: vi_VN\n"
+"X-Poedit-SearchPath-0: E:/!our theme wordpress/residence/!versions/1.15.2/"
+"wpresidence\n"
 
 #: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/404.php:16
 msgid "Page not found"
-msgstr ""
+msgstr "Trang không tìm thấy"
 
 #: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/404.php:20
 msgid ""
 "We're sorry. Your page could not be found, But you can check our latest "
 "listings & articles"
 msgstr ""
+"Chúng tôi rất tiếc. Trang của bạn không thể được tìm thấy, nhưng bạn có thể "
+"kiểm tra các BĐS & bài viết mới nhất của chúng tôi"
 
 #: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/404.php:24
 msgid "Latest Listings"
-msgstr ""
+msgstr "BĐS mới nhất"
 
 #: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/404.php:44
 msgid "Latest Articles"
-msgstr ""
+msgstr "BÀI VIẾT MỚI NHẤT"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/archive.php:17
@@ -90,13 +94,13 @@ msgstr ""
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/comments.php:53
 msgid "Leave a Reply"
-msgstr ""
+msgstr "Bình luận"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/comments.php:54
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr ""
+msgstr "Trả lời %s"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/comments.php:55
@@ -123,7 +127,7 @@ msgstr ""
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/ajax_functions.php:1185
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/property.php:1087
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/comments.php:77
@@ -423,8 +427,7 @@ msgstr ""
 msgid "Type Max. Price"
 msgstr ""
 
-#: E:\!our theme
-#: wordpress\residence\!versions\1.15.2\wpresidence/header.php:20
+#: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/header.php:20
 #, php-format
 msgid "Page %s"
 msgstr ""
@@ -433,13 +436,11 @@ msgstr ""
 msgid "There are no posts published!"
 msgstr ""
 
-#: E:\!our theme
-#: wordpress\residence\!versions\1.15.2\wpresidence/search.php:23
+#: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/search.php:23
 msgid "Search Results for : "
-msgstr ""
+msgstr "Kết quả tìm kiếm:"
 
-#: E:\!our theme
-#: wordpress\residence\!versions\1.15.2\wpresidence/search.php:33
+#: E:\!our theme wordpress\residence\!versions\1.15.2\wpresidence/search.php:33
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/normal_map_core.php:179
 msgid ""
 "We didn't find any results. Please try again with different search "
@@ -449,7 +450,7 @@ msgstr ""
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/searchform.php:2
 msgid "Type Keyword"
-msgstr ""
+msgstr "Gõ từ khóa"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/searchform.php:3
@@ -460,7 +461,7 @@ msgstr ""
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/theme-admin.php:215
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/widgets/advanced_search.php:84
 msgid "Search"
-msgstr ""
+msgstr "Tìm kiếm"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/single-estate_property.php:41
@@ -526,7 +527,7 @@ msgstr ""
 #: wordpress\residence\!versions\1.15.2\wpresidence/user_dashboard.php:101
 #: wordpress\residence\!versions\1.15.2\wpresidence/user_dashboard_search_result.php:102
 msgid "Search a listing"
-msgstr ""
+msgstr "Tìm kiếm"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/user_dashboard_add.php:431
@@ -6392,7 +6393,7 @@ msgstr ""
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/agent_contact.php:38
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/footer_buttons.php:14
 msgid "Your Name"
-msgstr ""
+msgstr "Tên"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/ajax_functions.php:3241
@@ -6435,7 +6436,7 @@ msgstr ""
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/css_js_include.php:587
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/agent_contact.php:43
 msgid "Your Message"
-msgstr ""
+msgstr "Nội dung liên hệ"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/libs/ajax_functions.php:3269
@@ -10942,7 +10943,7 @@ msgstr ""
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/blog_unit.php:71
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/blog_unit2.php:103
 msgid "Continue Reading"
-msgstr ""
+msgstr "Xem tiếp"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.15.2\wpresidence/templates/breadcrumbs.php:26
