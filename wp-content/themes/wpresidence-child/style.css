@@ -32,7 +32,7 @@ Updated: 2015-01-25 18:19:31
 }
 .agent_unit {
     min-height: auto;
-    height: 20em !important;
+    height: 14em !important;
     margin-bottom: 56px !important;
 }
 .agent-title {
@@ -47,7 +47,7 @@ Updated: 2015-01-25 18:19:31
     border-bottom: none;
     width: auto;
     margin: 0 auto;
-    height: 84%;
+    height: 100%;
 }
 .agent_unit h4 {
     padding: 8px 5px;
@@ -57,8 +57,14 @@ Updated: 2015-01-25 18:19:31
 }
 .agent-unit-img-wrapper {
     position: absolute;
-    top: 20px;
-    bottom: 42px;
+    top: 0;
+    bottom: 38px;
     left: 0;
     right: 0;
+    padding-top: 38px;
+}
+.agent-unit-img-wrapper div.img-wrapper{
+    width: auto;
+    height: 60%;
+    margin: 0 auto;
 }
