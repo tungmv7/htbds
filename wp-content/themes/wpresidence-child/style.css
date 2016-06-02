@@ -68,3 +68,31 @@ Updated: 2015-01-25 18:19:31
     height: 60%;
     margin: 0 auto;
 }
+.agents-listing {
+    min-height: 200px;
+}
+.agents-listing .property_listing {
+    min-height: 200px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+.agents-listing .blog_unit_image {
+    min-height: 140px;
+    border-bottom: 3px solid #009688!important;
+}
+.agents-listing .blog_unit_image span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    height: 100%;
+    width: 100%;
+}
+.agents-listing .blog_unit_image img {
+    max-width: 120px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}

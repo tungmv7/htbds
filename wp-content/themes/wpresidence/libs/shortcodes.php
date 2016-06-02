@@ -499,26 +499,62 @@ if (!function_exists('wpestate_list_agents_function')):
 
         $recent_posts = new WP_Query($args);
 
+        $return_string .= '<div class="article_container slider_container bottom-' . $type . ' ' . $class . '" >';
 
-        $return_string .= '<div class="article_container bottom-' . $type . ' ' . $class . '" >';
+        $return_string .= '<div class="slider_control_left"><i class="fa fa-angle-left"></i></div>
+                       <div class="slider_control_right"><i class="fa fa-angle-right"></i></div>';
+
         if ($title != '') {
-            $return_string .= '<h2 class="shortcode_title">' . $title . '</h2>';
+            $return_string .= '<h2 class="shortcode_title title_slider">' . $title . '</h2>';
         }
+
+        $is_autoscroll = '';
+        $autoscroll = 3000;
+
+        $is_autoscroll = ' data-auto="' . $autoscroll . '" ';
+
+
+        $return_string .= '<div class="shortcode_slider_wrapper" ' . $is_autoscroll . '><ul class="shortcode_slider_list">';
+
 
         ob_start();
         while ($recent_posts->have_posts()): $recent_posts->the_post();
-            print '<div class="col-sm-' . $row_number_col . ' listing_wrapper">';
-            get_template_part('templates/agent_unit');
-            print '</div>';
+            print '<li>';
+            get_template_part('templates/agent_unit_slider'); //col-md- shortcode-col  listing_wrapper blog2v
+            print '</li>';
         endwhile;
 
         $templates = ob_get_contents();
         ob_end_clean();
         $return_string .= $templates;
         $return_string .= $button;
+
+        $return_string .= '</ul></div>';// end shrcode wrapper
         $return_string .= '</div>';
         wp_reset_query();
+        wp_reset_postdata();
         $is_shortcode = 0;
+
+
+//        $return_string .= '<div class="article_container bottom-' . $type . ' ' . $class . '" >';
+//        if ($title != '') {
+//            $return_string .= '<h2 class="shortcode_title">' . $title . '</h2>';
+//        }
+//
+//        ob_start();
+//        while ($recent_posts->have_posts()): $recent_posts->the_post();
+//            print '<div class="col-sm-' . $row_number_col . ' listing_wrapper">';
+//            get_template_part('templates/agent_unit');
+//            print '</div>';
+//        endwhile;
+//
+//        $templates = ob_get_contents();
+//        ob_end_clean();
+//        $return_string .= $templates;
+//        $return_string .= $button;
+//        $return_string .= '</div>';
+//        wp_reset_query();
+//        $is_shortcode = 0;
         return $return_string;
 
 
