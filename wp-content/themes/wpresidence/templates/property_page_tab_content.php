@@ -37,6 +37,14 @@ $show_graph_prop_page= esc_html( get_option('wp_estate_show_graph_prop_page', ''
             ?>
         </a>
     </li>
+
+  <li role="presentation">
+      <a href="#images" aria-controls="details" role="tab" data-toggle="tab">
+          <?php
+          _e('Hình ảnh', 'wpestate');
+          ?>
+      </a>
+  </li>
     
     <?php
     $prpg_slider_type_status= esc_html ( get_option('wp_estate_global_prpg_slider_type','') ); 
@@ -73,7 +81,9 @@ $show_graph_prop_page= esc_html( get_option('wp_estate_show_graph_prop_page', ''
     <div role="tabpanel" class="tab-pane" id="details">
         <?php echo get_post_meta($post->ID, 'property-price', true); ?>
     </div>
-
+      <div role="tabpanel" class="tab-pane" id="images">
+          <?php echo get_post_meta($post->ID, 'property-images', true); ?>
+      </div>
     <?php
     $prpg_slider_type_status= esc_html ( get_option('wp_estate_global_prpg_slider_type','') );        
     if( ($local_pgpr_slider_type_status == 'global' && $prpg_slider_type_status == 'full width header') ||
