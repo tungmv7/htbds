@@ -67,7 +67,6 @@ if(isset($prop_unit) && $prop_unit=='list'){
 if( $property_unit_slider==1){
     $col_class.=' has_prop_slider ';
 }
-
 ?>  
 
 

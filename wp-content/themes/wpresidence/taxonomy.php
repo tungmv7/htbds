@@ -100,8 +100,8 @@ if($custom_post_type =='estate_agent'){
                   'post_status'       => 'publish',
                   'paged'             => $paged,
                   'posts_per_page'    => $prop_no ,
-                  'meta_key'          => 'prop_featured',
-                  'orderby'           => 'meta_value',
+//                  'meta_key'          => 'prop_featured',
+//                  'orderby'           => 'meta_value',
                   'order'             => 'DESC',
                   'tax_query'  => array(
                        'relation' => 'AND',
@@ -109,9 +109,9 @@ if($custom_post_type =='estate_agent'){
                     )
                 );
 
-    add_filter( 'posts_orderby', 'wpestate_my_order' );
+//    add_filter( 'posts_orderby', 'wpestate_my_order' );
     $prop_selection = new WP_Query($args);
-    remove_filter( 'posts_orderby', 'wpestate_my_order' );
+//    remove_filter( 'posts_orderby', 'wpestate_my_order' );
     $counter = 0;
 }
 
