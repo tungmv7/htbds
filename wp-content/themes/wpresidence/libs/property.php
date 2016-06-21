@@ -906,13 +906,13 @@ if (!function_exists('wpestate_populate_columns')):
 
             $price = floatval(get_post_meta(get_the_ID(), 'property_price', true));
             if ($price != 0) {
-                $price = number_format($price);
+//                $price = number_format($price);
 
-                if ($where_currency == 'before') {
-                    $price = $currency . ' ' . $price;
-                } else {
-                    $price = $price . ' ' . $currency;
-                }
+//                if ($where_currency == 'before') {
+//                    $price = $currency . ' ' . $price;
+//                } else {
+//                    $price = $price . ' ' . $currency;
+//                }
             } else {
                 $price = '';
             }
