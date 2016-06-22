@@ -96,3 +96,62 @@ Updated: 2015-01-25 18:19:31
     left: 0;
     transform: translate(-50%, -50%);
 }
+
+.contact_sidebar_wrap > p,
+.contact_sidebar_wrap > p a,
+.widget-title-sidebar,
+#primary, #primary a, #primary label, .advanced_search_sidebar  .form-control::-webkit-input-placeholder,
+.featured_article_righ, .featured_article_secondline,
+/*.agent_meta, .blog_unit_meta a,*/
+.sale_line,
+/*.meta-info a, */
+.breadcrumb > li + li:before,
+/*.blog_unit_meta, .meta-info, */
+.agent_position, .breadcrumb a,
+.tab-content, .tab-content ul li, .tab-content ol li,
+#colophon .widget-container.widget_text .textwidget,
+.widget-title-footer, .widget_latest_title a,
+.contact_page_company_details,
+.contact_page_company_details .agent_detail a,
+.contact_page_company_details .company_headline h3,
+.company_headline h4,
+.single-content.contact-content,
+.single-content, .single-content h1, .single-content h2, .single-content h3,
+.single-content h4, .single-content h5, .single-content h6,
+.notice_area .adres_area,
+.notice_area .adres_area a
+{
+    color: #fff !important;
+}
+.bottom-estate_property .property_listing {
+    min-height: 310px;
+}
+.bottom-estate_property .property_listing > .listing_details.the_grid_view {
+    display: none !important;
+}
+.social_sidebar_internal > a {
+    background-color: #009688!important;
+}
+.listing_wrapper.blog2v > .property_listing > .listing_details.the_grid_view {
+    color: #000B2E;
+}
+.entry-title,
+.entry-title.entry-prop,
+.entry-title.title_prop,
+.tab-content h1,
+.tab-content h2,
+.tab-content h3,
+.tab-content h4,
+.tab-content h5,
+.tab-content h6,
+.xoxo .textwidget,
+.notice_area .price_area,
+.uvc-main-heading.ult-responsive h2{
+    color: #fff23e !important;
+}
+.filter_menu li {
+    color: #333;
+}
+.xoxo .textwidget img {
+    width: 100%;
+}
