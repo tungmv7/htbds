@@ -96,3 +96,69 @@ Updated: 2015-01-25 18:19:31
     left: 0;
     transform: translate(-50%, -50%);
 }
+#footer-widget-area .widget-title-footer {
+  color: #fff23e !important;
+}
+#footer-widget-area #first p,
+#footer-widget-area #second p,
+#footer-widget-area #second a,
+#footer-widget-area .widget-container ul > li > a {
+  color: #fff !important;
+}
+ul.xoxo > li.widget_text div.textwidget img {
+  width: 100%;
+}
+.custom-listing {
+  min-height: 310px;
+}
+.custom-listing .listing_details.the_list_view,
+.custom-listing .listing_details.the_grid_view {
+  display: none;
+  min-height: auto;
+}
+.custom-listing h4 a,
+.property_listing h4 a,
+.property_listing a,
+.property_listing .listing_details.the_list_view,
+.property_listing .listing_details.the_grid_view,
+ul.filter_menu li
+{
+  color: #828282 !important;
+}
+.entry-title.entry-prop{
+  color: #fff23e;
+}
+h1.title_prop,
+h1.entry-title,
+.top_bar a,
+a.menu-item-link,
+h3.widget-title-sidebar,
+.company_headline h3,
+.company_headline h4,
+.related_posts h3,
+h3.comment-reply-title,
+.tab-content h1,
+.tab-content h2,
+.tab-content h3,
+.tab-content h4,
+.tab-content h5,
+.tab-content h6 {
+  color: #fff23e !important;
+}
+
+body, a, label, input[type=text], input[type=password],
+input[type=email], input[type=url], input[type=number],
+textarea, .slider-content, .listing-details,
+.contact_sidebar_wrap p,
+h4.nothing,
+.tab-content ul > li,
+.short_intro.txt_666,
+table tbody tr td,
+.form-control, #user_menu_open i, #grid_view, #list_view,
+.listing_details a, .notice_area, .social-agent-page a,
+.prop_detailsx, #reg_passmail_topbar, #reg_passmail,
+.testimonial-text, .wpestate_tabs .ui-widget-content,
+.wpestate_tour  .ui-widget-content, .wpestate_accordion_tab .ui-widget-content,
+.wpestate_accordion_tab .ui-state-default, .wpestate_accordion_tab .ui-widget-content .ui-state-default, .wpestate_accordion_tab .ui-widget-header .ui-state-default, .filter_menu {
+  color: #ddd !important;
+}

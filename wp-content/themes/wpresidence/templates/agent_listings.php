@@ -31,8 +31,8 @@ $args = array(
     'post_status'       => 'publish',
     'paged'             => $paged,
     'posts_per_page'    => 9,
-    'meta_key'          => 'prop_featured',
-    'orderby'           => 'meta_value',
+    // 'meta_key'          => 'prop_featured',
+    'orderby'           => 'published_date',
     'order'             => 'DESC',
     'meta_query'        => array(
                                 array(
@@ -62,7 +62,7 @@ if ( get_option('wp_estate_readsys','') =='yes' ){
     $path=estate_get_pin_file_path();
     $selected_pins=file_get_contents($path);
 }else{
-    $selected_pins = wpestate_listing_pins($mapargs);//call the new pins  
+    $selected_pins = wpestate_listing_pins($mapargs);//call the new pins
 }
 
 if ( $prop_selection->have_posts() ) {
@@ -70,32 +70,32 @@ if ( $prop_selection->have_posts() ) {
     $compare_submit =   get_compare_link();
     ?>
     <div class="mylistings" style="overflow: visible">
-        <?php  get_template_part('templates/compare_list'); ?> 
-        <?php   
-        print'<h3 class="agent_listings_title">'.__('My Listings','wpestate').'</h3>';
-        while ($prop_selection->have_posts()): $prop_selection->the_post();                     
-           get_template_part('templates/property_unit');  
+        <?php  get_template_part('templates/compare_list'); ?>
+        <?php
+        print'<h3 class="agent_listings_title">'.__('Các dự án','wpestate').'</h3>';
+        while ($prop_selection->have_posts()): $prop_selection->the_post();
+           get_template_part('templates/property_unit');
         endwhile;
         // Reset postdata
         wp_reset_postdata();
         // Custom query loop pagination
-    
-        ?>
-        
-    <?php 
-        second_loop_pagination($prop_selection->max_num_pages,$range =2,$paged,get_permalink());
-        //kriesi_pagination_agent($prop_selection->max_num_pages, $range =2);    
-    ?>  
-   
-    </div>
-<?php        
-} ?>
-    
 
-<?php wp_localize_script('googlecode_regular', 'googlecode_regular_vars2', 
+        ?>
+
+    <?php
+        second_loop_pagination($prop_selection->max_num_pages,$range =2,$paged,get_permalink());
+        //kriesi_pagination_agent($prop_selection->max_num_pages, $range =2);
+    ?>
+
+    </div>
+<?php
+} ?>
+
+
+<?php wp_localize_script('googlecode_regular', 'googlecode_regular_vars2',
         array( 'markers2'   =>  $selected_pins,
                'agent_id'   =>  $agent_id )
-        ); 
+        );
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -107,13 +107,13 @@ function second_loop_pagination($pages = '', $range = 2,$paged,$link){
             $newpage=1;
         }
         $next_page  =   esc_url_raw ( add_query_arg('pagelist',$newpage, esc_url ($link) ) );
-        $showitems = ($range * 2)+1; 
+        $showitems = ($range * 2)+1;
         if($pages>1)
         {
             print "<ul class='pagination pagination_nojax pagination_agent'>";
             echo "<li class=\"roundleft\"><a href='".$next_page."'><i class=\"fa fa-angle-left\"></i></a></li>";
-      
-             
+
+
             for ($i=1; $i <= $pages; $i++)
             {
                 if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))

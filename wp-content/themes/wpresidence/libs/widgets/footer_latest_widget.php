@@ -1,13 +1,13 @@
 <?php
 class Footer_latest_widget extends WP_Widget {
-	
+
 	function footer_latest_widget(){
 		$widget_ops = array('classname' => 'latest_listings', 'description' => 'Show latest listings.');
 		$control_ops = array('id_base' => 'footer_latest_widget');
 		//$this->WP_Widget('footer_latest_widget', 'Wp Estate: Latest Listing ', $widget_ops, $control_ops);
                 parent::__construct('footer_latest_widget', 'Wp Estate: Latest Listing ', $widget_ops, $control_ops);
 	}
-	 
+
 	function form($instance){
 		$defaults = array('title'                       =>  'Latest Listing',
                                   'listing_no'                  =>  3,
@@ -18,11 +18,11 @@ class Footer_latest_widget extends WP_Widget {
                                    'show_featured_only'         =>  ''
                     );
 		$instance = wp_parse_args((array) $instance, $defaults);
-                
-                
+
+
                 $args = array(
-                    'hide_empty'    => false 
-                );  
+                    'hide_empty'    => false
+                );
 
                 $actions_select     =   '';
                 $categ_select       =   '';
@@ -37,18 +37,18 @@ class Footer_latest_widget extends WP_Widget {
 
                 $all_selected='';
                 if(!empty($current_adv_filter_search_action) &&  in_array  (__('all','wpestate'),$current_adv_filter_search_action)  ){
-                  $all_selected=' selected="selected" ';  
+                  $all_selected=' selected="selected" ';
                 }
 
                 $actions_select.='<option value="all" '.$all_selected.'>'.__('all','wpestate').'</option>';
-                if( !empty( $tax_terms ) ){                       
+                if( !empty( $tax_terms ) ){
                     foreach ($tax_terms as $tax_term) {
                         $actions_select .= '<option value="'.$tax_term->name.'" ';
                         if( in_array  ( $tax_term->name,$current_adv_filter_search_action) ){
-                          $actions_select .= ' selected="selected" ';  
+                          $actions_select .= ' selected="selected" ';
                         }
-                        $actions_select .=' >'.$tax_term->name.'</option>';      
-                    } 
+                        $actions_select .=' >'.$tax_term->name.'</option>';
+                    }
                 }
 
 
@@ -64,22 +64,22 @@ class Footer_latest_widget extends WP_Widget {
 
                 $all_selected='';
                 if( !empty($current_adv_filter_search_category) && $current_adv_filter_search_category[0]=='all'){
-                  $all_selected=' selected="selected" ';  
+                  $all_selected=' selected="selected" ';
                 }
 
                 $categ_select.='<option value="all" '.$all_selected.'>'.__('all','wpestate').'</option>';
-                if( !empty( $tax_terms ) ){                       
+                if( !empty( $tax_terms ) ){
                     foreach ($tax_terms as $tax_term) {
                         $categ_select.='<option value="'.$tax_term->name.'" ';
                         if( in_array  ( $tax_term->name, $current_adv_filter_search_category) ){
-                          $categ_select.=' selected="selected" ';  
+                          $categ_select.=' selected="selected" ';
                         }
-                        $categ_select.=' >'.$tax_term->name.'</option>';      
-                    } 
+                        $categ_select.=' >'.$tax_term->name.'</option>';
+                    }
                 }
 
 
-             //////////////////////////////////////////////////////////////////////////////////////////   
+             //////////////////////////////////////////////////////////////////////////////////////////
 
                 $select_city='';
                 $taxonomy = 'property_city';
@@ -92,7 +92,7 @@ class Footer_latest_widget extends WP_Widget {
 
                 $all_selected='';
                 if( !empty($current_adv_filter_city) && $current_adv_filter_city[0]=='all'){
-                  $all_selected=' selected="selected" ';  
+                  $all_selected=' selected="selected" ';
                 }
 
                 $select_city.='<option value="all" '.$all_selected.' >'.__('all','wpestate').'</option>';
@@ -100,25 +100,25 @@ class Footer_latest_widget extends WP_Widget {
 
                     $select_city.= '<option value="' . $tax_term->name . '" ';
                     if( in_array  ( $tax_term->name, $current_adv_filter_city) ){
-                          $select_city.=' selected="selected" ';  
+                          $select_city.=' selected="selected" ';
                     }
                     $select_city.= '>' . $tax_term->name . '</option>';
-                } 
+                }
 
 
-             //////////////////////////////////////////////////////////////////////////////////////////   
+             //////////////////////////////////////////////////////////////////////////////////////////
 
                 $select_area='';
                 $taxonomy = 'property_area';
                 $tax_terms_area = get_terms($taxonomy,$args);
-                $current_adv_filter_area =  $instance['current_adv_filter_area']; 
+                $current_adv_filter_area =  $instance['current_adv_filter_area'];
                 if($current_adv_filter_area==''){
                     $current_adv_filter_area=array();
                 }
 
                 $all_selected='';
                 if(!empty($current_adv_filter_area) && $current_adv_filter_area[0]=='all'){
-                  $all_selected=' selected="selected" ';  
+                  $all_selected=' selected="selected" ';
                 }
 
                 $select_area.='<option value="all" '.$all_selected.'>'.__('all','wpestate').'</option>';
@@ -126,16 +126,16 @@ class Footer_latest_widget extends WP_Widget {
                     $term_meta=  get_option( "taxonomy_$tax_term->term_id");
                     $select_area.= '<option value="' . $tax_term->name . '" ';
                     if( in_array  ( $tax_term->name, $current_adv_filter_area) ){
-                          $select_area.=' selected="selected" ';  
+                          $select_area.=' selected="selected" ';
                     }
                     $select_area.= '>' . $tax_term->name . '</option>';
-                } 
+                }
 
-                //////////////////////////////////   
-    
-                   
- 
-                $cache_array                =   array('yes','no');
+                //////////////////////////////////
+
+
+
+                $cache_array                =   array('property','article');
                 $show_featured_only_select  =   '';
                 $show_featured_only         =   $instance['show_featured_only'];
                 foreach($cache_array as $value){
@@ -146,54 +146,54 @@ class Footer_latest_widget extends WP_Widget {
                     $show_featured_only_select.='>'.$value.'</option>';
                 }
 
-                 //////////////////////////////////   
-                
+                 //////////////////////////////////
+
 		$display='
                 <p>
-                    <label for="'.$this->get_field_id('title').'">Title:</label> </br>  
+                    <label for="'.$this->get_field_id('title').'">Title:</label> </br>
                     <input id="'.$this->get_field_id('title').'" name="'.$this->get_field_name('title').'" value="'.$instance['title'].'" />
 		</p>
 
                 <p>
-                   <label for="'.$this->get_field_id('listing_no').'">How many Listings:</label> </br>  		
+                   <label for="'.$this->get_field_id('listing_no').'">How many Listings:</label> </br>
                    <input id="'.$this->get_field_id('listing_no').'" name="'.$this->get_field_name('listing_no').'" value="'.$instance['listing_no'].'" />
 		</p>
-                
-                <p>               
-                    <label   for="'.$this->get_field_id('adv_filter_search_action').'">Pick actions</label> </br>            
+
+                <p>
+                    <label   for="'.$this->get_field_id('adv_filter_search_action').'">Pick actions</label> </br>
                     <select id="'.$this->get_field_id('adv_filter_search_action').'" name="'.$this->get_field_name('adv_filter_search_action').'[]"   multiple="multiple" style="width:250px;" >
                         '.$actions_select.'
                     </select>
                 </p>
 
                 <p>
-                    <label for="'.$this->get_field_id('adv_filter_search_category').'">Pick category</label> </br>          
+                    <label for="'.$this->get_field_id('adv_filter_search_category').'">Pick category</label> </br>
                     <select id="'.$this->get_field_id('adv_filter_search_category').'"  name="'.$this->get_field_name('adv_filter_search_category').'[]"  multiple="multiple" style="width:250px;" >
                         '.$categ_select.'
                     </select>
                 </p>
-                
+
                 <p>
                     <label for="'.$this->get_field_id('current_adv_filter_city').'">Pick City</label> </br>
                     <select  id="'.$this->get_field_id('current_adv_filter_city').'" name="'.$this->get_field_name('current_adv_filter_city').'[]"  multiple="multiple" style="width:250px;" >
                         '.$select_city.'
                     </select>
                 </p>
-                
+
                  <p>
                     <label for="'.$this->get_field_id('current_adv_filter_area').'">Pick Area</label> </br>
                     <select id="'.$this->get_field_id('current_adv_filter_area').'"  name="'.$this->get_field_name('current_adv_filter_area').'[]"  multiple="multiple" style="width:250px;" >
                         '.$select_area.'
                     </select>
                 </p>
-                
+
                 <p>
-                    <label for="'.$this->get_field_id('show_featured_only').'">Show featured only </label><br />
+                    <label for="'.$this->get_field_id('show_featured_only').'">Article type </label><br />
                     <select id="'.$this->get_field_id('show_featured_only').'"  name="'.$this->get_field_name('show_featured_only').'" style="width:250px;" >
                         '.$show_featured_only_select.'
                     </select>
                 </p>';
-                
+
 		print $display;
 	}
 
@@ -216,20 +216,20 @@ class Footer_latest_widget extends WP_Widget {
 		extract($args);
                 $currency = get_option('wp_estate_currency_symbol', '');
                 $where_currency = get_option('wp_estate_where_currency_symbol', '');
-                
+
                 $display='';
                 $title = apply_filters('widget_title', $instance['title']);
-                
+
 		print $before_widget;
                 if($title) {
 			print $before_title.$title.$after_title;
 		}
-                
+
                 $display.='<div class="latest_listings">';
-                
-                
+
+
                 ///adding custom parameters
-                
+
                 $current_user = wp_get_current_user();
                 $currency                   =   esc_html( get_option('wp_estate_currency_symbol', '') );
                 $where_currency             =   esc_html( get_option('wp_estate_where_currency_symbol', '') );
@@ -250,7 +250,7 @@ class Footer_latest_widget extends WP_Widget {
                 $current_adv_filter_area                = $instance['current_adv_filter_area'];
                 $current_adv_filter_city                = $instance['current_adv_filter_city'];
                 $show_featured_only                     = $instance['show_featured_only'];
-               
+
 
 
                 $area_array =   $city_array =   $action_array   =   $categ_array    ='';
@@ -281,7 +281,7 @@ class Footer_latest_widget extends WP_Widget {
                 /////////////////////////////////////////////////////////////////////////category
 
                 if ( !empty($current_adv_filter_search_category) && $current_adv_filter_search_category[0]!='all' ){
-                    $taxaction_include   =   array();   
+                    $taxaction_include   =   array();
 
                     foreach( $current_adv_filter_search_category as $key=>$value){
                         $taxaction_include[]=sanitize_title($value);
@@ -299,7 +299,7 @@ class Footer_latest_widget extends WP_Widget {
                 /////////////////////////////////////////////////////////////////////////////
 
                 if ( !empty( $current_adv_filter_city ) && $current_adv_filter_city[0]!='all' ) {
-                     $taxaction_include   =   array();   
+                     $taxaction_include   =   array();
 
                     foreach( $current_adv_filter_city as $key=>$value){
                         $taxaction_include[]=sanitize_title($value);
@@ -318,7 +318,7 @@ class Footer_latest_widget extends WP_Widget {
                 /////////////////////////////////////////////////////////////////////////////
 
                 if ( !empty( $current_adv_filter_area ) && $current_adv_filter_area[0]!='all' ) {
-                     $taxaction_include   =   array();   
+                     $taxaction_include   =   array();
 
                     foreach( $current_adv_filter_area as $key=>$value){
                         $taxaction_include[]=sanitize_title($value);
@@ -339,90 +339,92 @@ class Footer_latest_widget extends WP_Widget {
 
                 /////////////////////////////////////////////////////////////////////////////
 
-                $meta_query=array();                
-                if($show_featured_only=='yes'){
-                    $compare_array=array();
-                    $compare_array['key']        = 'prop_featured';
-                    $compare_array['value']      = 1;
-                    $compare_array['type']       = 'numeric';
-                    $compare_array['compare']    = '=';
-                    $meta_query[]                = $compare_array;
-                }
+                $meta_query=array();
+                // if($show_featured_only=='yes'){
+                //     $compare_array=array();
+                //     $compare_array['key']        = 'prop_featured';
+                //     $compare_array['value']      = 1;
+                //     $compare_array['type']       = 'numeric';
+                //     $compare_array['compare']    = '=';
+                //     $meta_query[]                = $compare_array;
+                // }
 
 
 
                 $meta_directions='DESC';
-                $meta_order='prop_featured';
-             
-    
+                // $meta_order='prop_featured';
+
+								$post_type = $show_featured_only == "property" ? 'estate_property' : 'post';
                 $args = array(
-                    'post_type'         => 'estate_property',
+                    'post_type'         => $post_type,
                     'post_status'       => 'publish',
                     'paged'             => 1,
                     'posts_per_page'    => $instance['listing_no'],
                     'orderby'           => 'id',
-                    'meta_key'          => $meta_order,
-                    'order'             => $meta_directions,
-                    'meta_query'        => $meta_query,
+                    // 'meta_key'          => $meta_order,
+                    // 'order'             => $meta_directions,
+                    // 'meta_query'        => $meta_query,
                     'tax_query'         => array(
                                                 'relation' => 'AND',
                                                 $categ_array,
-                                                $action_array,
+                                                // $action_array,
                                                 $city_array,
-                                                $area_array
+                                                // $area_array
                                             )
                 );
           //   print_r($args);
-             
-                add_filter( 'posts_orderby', 'wpestate_my_order' );
+
+                // add_filter( 'posts_orderby', 'wpestate_my_order' );
                 $the_query = new WP_Query( $args );
-                remove_filter( 'posts_orderby', 'wpestate_my_order' );
+                // remove_filter( 'posts_orderby', 'wpestate_my_order' );
 
                 // The Loop
                 while ( $the_query->have_posts() ) :
                         $the_query->the_post();
-                        
+												$price = '';
+												if ($show_featured_only == 'property') {
                         $price          = floatval   ( get_post_meta(get_the_ID(), 'property_price', true) );
                         $price_label    = esc_html ( get_post_meta(get_the_ID(), 'property_label', true) );
-                       
-                        $price = wpestate_show_price(get_the_ID(),$currency,$where_currency,1);  
-                       
-                      
-        
+
+                        $price = wpestate_show_price(get_the_ID(),$currency,$where_currency,1);
+												}
+
+
                         $class='no_post_th';
-                        $display.='<div class="widget_latest_internal" data-link="'.get_permalink().'">';  
-                       
+                        $display.='<div class="widget_latest_internal" data-link="'.get_permalink().'">';
+
                         $class      =   '';
                         $thumb_id   =   get_post_thumbnail_id();
                         $link       =   get_permalink();
-                        $preview    =   wp_get_attachment_image_src(get_post_thumbnail_id(), 'widget_thumb'); 
+                        $preview    =   wp_get_attachment_image_src(get_post_thumbnail_id(), 'widget_thumb');
                         if($preview[0] ==''){
                             $preview[0] =  get_template_directory_uri().'/img/defaults/default_widget_thumb.jpg';
                         }
-                        
+
                         $display    .=  '<div class="widget_latest_listing_image">
                                             <a href="'.$link.'"><img  src="'.$preview[0].'"  alt="slider-thumb" data-original="'.$preview[0].'" class="lazyload img_responsive" height="70" width="105" /></a>
                                             <div class="listing-cover"></div>
                                             <a href="'.$link.'"> <span class="listing-cover-plus">+</span></a>
                                         </div>';
 
-                       
+
                         $display.='<div class="listing_name '.$class.' "><span class=widget_latest_title><a href="'.$link.'">';
-                        $title=get_the_title();
-                        $display.= mb_substr( $title,0,35); 
-                        if(mb_strlen($title)>35){
-                            $display.= '...';   
-                        } 
-            
+                        $display.=$title=get_the_title();
+												// $title_length = $show_featured_only == 'property' ? 35 : 70;
+                        // $display.= mb_substr( $title,0,$title_length);
+                        // if(mb_strlen($title)>$title_length){
+                            // $display.= '...';
+                        // }
+
                         $display.='</a></span>
                                         <span class=widget_latest_price>'. $price.'</span>
                                    </div>' ;
                         $display.='</div>';
                 endwhile;
-                
+
                 wp_reset_query();
-				
-                
+
+
 
 		$display.='</div>';
 		print $display;
@@ -430,7 +432,7 @@ class Footer_latest_widget extends WP_Widget {
 	 }
 
  function action_select_dropn(){
-     
+
  }
 
 

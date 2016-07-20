@@ -25,16 +25,16 @@ if( $repeat_footer_back_status=='repeat' ){
 if( !wpestate_half_map_conditions ($post->ID) ){
 
 //if (!is_page_template('property_list_half.php') ){
-?>    
-    <footer id="colophon" role="contentinfo" <?php echo ($footer_style); ?> class=" <?php echo ($footer_back_class);?> ">    
+?>
+    <footer id="colophon" role="contentinfo" <?php echo ($footer_style); ?> class=" <?php echo ($footer_back_class);?> ">
         <div id="footer-widget-area" class="row">
            <?php get_sidebar('footer');?>
         </div><!-- #footer-widget-area -->
 
-        <div class="sub_footer">  
+        <div class="sub_footer">
             <div class="sub_footer_content">
                 <span class="copyright">
-                    <?php   
+                    <?php
                     $message = stripslashes( esc_html (get_option('wp_estate_copyright_message', '')) );
                     if (function_exists('icl_translate') ){
                         $property_copy_text      =   icl_translate('wpestate','wp_estate_property_copyright_text', $message );
@@ -46,15 +46,15 @@ if( !wpestate_half_map_conditions ($post->ID) ){
                 </span>
 
                 <div class="subfooter_menu">
-                    <?php      
+                    <?php
                         wp_nav_menu( array(
                            // 'menu'              => 'footer_menu',
                             'theme_location'    => 'footer_menu',
-                          //  'depth'             => 1                           
-                        ));  
+                          //  'depth'             => 1
+                        ));
                     ?>
-                </div>  
-            </div>  
+                </div>
+            </div>
         </div>
     </footer><!-- #colophon -->
 <?php } ?>
