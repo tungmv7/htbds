@@ -1049,7 +1049,7 @@ function estate_save_postdata($post_id) {
            
             if (in_array ($key, $allowed_keys)) {
                 $postmeta = wp_filter_kses( $value );
-                if (in_array($key, ['property-location', 'property-price'])) {
+                if (in_array($key, ['property-location', 'property-price', 'property-images'])) {
                     $postmeta = $value;
                 }
                 update_post_meta($post_id, sanitize_key($key), $postmeta );
