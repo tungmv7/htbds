@@ -162,3 +162,7 @@ table tbody tr td,
 .wpestate_accordion_tab .ui-state-default, .wpestate_accordion_tab .ui-widget-content .ui-state-default, .wpestate_accordion_tab .ui-widget-header .ui-state-default, .filter_menu {
   color: #ddd !important;
 }
+
+#colophon .social_sidebar_internal a, #primary .social_sidebar_internal a{
+  background-color: #009688!important;
+}
