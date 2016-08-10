@@ -166,3 +166,15 @@ table tbody tr td,
 #colophon .social_sidebar_internal a, #primary .social_sidebar_internal a{
   background-color: #009688!important;
 }
+
+div.pp_default .pp_description {
+  color: #333;
+}
+div.ppt {
+  display: none !important;
+}
+
+div#tab_prpg .tab-pane a {
+    background: transparent !important;
+    text-decoration: underline;
+}
