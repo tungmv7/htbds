@@ -178,3 +178,15 @@ div#tab_prpg .tab-pane a {
     background: transparent !important;
     text-decoration: underline;
 }
+
+/*Have to add custom-news-section on parent wrapper of news section*/
+.custom-news-section .article_container .blog_unit_image {
+    border-bottom: 3px solid #009688!important;
+    text-align: center;
+}
+.custom-news-section .article_container .blog_unit_image img{
+    border-bottom: none !important;
+    height: 161px;
+    width: auto;
+    margin: 0 auto;
+}
